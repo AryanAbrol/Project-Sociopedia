@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema(
   {
     firstName: { type: String, require: true, min: 2, max: 50 },
-    lasttName: { type: String, require: true, min: 2, max: 50 },
+    lastName: { type: String, require: true, min: 2, max: 50 },
     email: { type: String, require: true, max: 50, unique: true },
     password: { type: String, require: true, min: 5, max: 10 },
     picturePath: { type: String, default: "" },
